@@ -1,0 +1,270 @@
+/* ===== GENERAL ===== */
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 90px;
+  height: 70px;
+  border-radius: 10%;
+}
+
+.logo h1 {
+  color: #ffcc00;
+  font-size: 24px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* ===== SECCIÓN PRINCIPAL ===== */
+.bienvenida {
+  text-align: center;
+  margin: 300px 100px;
+}
+
+.bienvenida h2 {
+  font-size: 32px;
+  color: #ffcc00;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 60px;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-info {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-info h3 {
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
+.footer-info p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.footer-mapa {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-mapa iframe {
+  width: 100%;
+  max-width: 420px;
+  height: 280px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ===== CATÁLOGO ===== */
+.catalogo {
+  padding: 40px 80px;
+  text-align: center;
+}
+
+.catalogo h2 {
+  color: #ffcc00;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.catalogo section {
+  margin-bottom: 60px;
+}
+
+.catalogo h3 {
+  color: #fff;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.producto {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 220px;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.producto h4 {
+  margin: 10px 0 5px;
+  color: #ffcc00;
+}
+
+.precio {
+  font-weight: bold;
+  color: #fff;
+}
+
+.producto button {
+  margin-top: 8px;
+  padding: 8px 15px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.producto button:hover {
+  background-color: #e6b800;
+}
+
+/* ===== SERVICIOS ===== */
+.servicios {
+  padding: 40px 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.servicios h2 {
+  color: #ffcc00;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.servicios .descripcion {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.servicios-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.servicio {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 230px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+}
+
+.servicio img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.servicio h3 {
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
+.servicio p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #eee;
+}
